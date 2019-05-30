@@ -13,11 +13,9 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
   background-color: #e5e5e5;
   padding: 30px;
@@ -25,7 +23,6 @@ header {
   font-size: 35px;
   color: white;
 }
-
 nav {
   float: left;
   width: 30%;
@@ -33,12 +30,10 @@ nav {
   background: #ffffff;
   padding: 20px;
 }
-
 nav ul {
   list-style-type: none;
   padding: 7;
 }
-
 article {
   float: left;
   padding: 20px;
@@ -46,20 +41,17 @@ article {
   background-color: #ffffff;
   height: 300px;
 }
-
 section:after {
   content: "";
   display: table;
   clear: both;
 }
-
 footer {
   background-color: #777;
   padding: 10px;
   text-align: center;
   color: white;
 }
-
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -79,11 +71,9 @@ footer {
     <ul>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
-          <script>
-
+<script>
+      
                    $(document).ready(function(){
-
                     $('#meuFormulario').on('submit', function(e){
                             e.preventDefault();
                             var nome = $('#nome').val().length;
@@ -96,42 +86,26 @@ footer {
                               alert("Você deve preencher o usuário e senha!")
                             }
                         });
-
                     });
   $(document).ready(function() {
-
     $('#form1').on('submit', function(e) {
-
       e.preventDefault();
-
-
       var api_url = 'https://api.linkpreview.net'
-
       var key = '5ccb9525ad6e74755159c3ffa27fa10e40287ac64f332' // real
-
       $.ajax({
-
         url: api_url + "?key=" + key + "&q=" + $("#endereco").val(),
-
         contentType: "application/json",
-
         dataType: 'json',
-
         success: function(result) {
-
           $("#p1").text(result.title);
-
           $("#p2").text(result.description);
-
           $('#p3').attr('src', result.image);
-
           $("#p4").text(result.url);
-
         }
       });
     });
   });
-                    
+        
     </script>
 
 <div class="container">
@@ -210,7 +184,7 @@ footer {
 
 </div>
 </div>
-
+</form>
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -261,6 +235,18 @@ O cantor se meteu em diversas confusões nos últimos anos: foi preso, está sen
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
  <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© Aneska</div>
-
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cde00102846b90c57aeeab2/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
